@@ -1,0 +1,801 @@
+
+SELECT DUMMY COMPANY => SELECT id FROM srm_companies WHERE customer_name = 'Unknown' AND customer_number = 0
+INSERTING DUMMY ==> COMPANY INSERT INTO srm_companies SET customer_name='Unknown', updated_at=now()
+SELECTING DUMMY SITE ==> SELECT id FROM srm_sites WHERE address1 = 'Unknown' AND siebel_site_id = 0 and customer_number = 0Array
+(
+    [id] => 57
+    [customer_number] => 15005
+    [siebel_site_id] => 244008
+    [division] => INTERMEC PTC AB
+    [department] => 
+    [address1] => 6001 36TH AVENUE WEST
+    [address2] => PO BOX 4280
+    [city] => EVERETT
+    [state] => WA
+    [country] => United States
+    [zipcode] => 98203-1264
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 57
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 244008 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 204997 WHERE id = 57
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 57Array
+(
+    [id] => 58
+    [customer_number] => 295
+    [siebel_site_id] => 188953-M
+    [division] => EASTMAN CHEMICAL COMPANY
+    [department] => 
+    [address1] => 200 SOUTH WILCOX DRIVE
+    [address2] => BUILDING 54D 5TH FLOOR
+    [city] => KINGSPORT
+    [state] => TN
+    [country] => United States
+    [zipcode] => 37660
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 58
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 188953-M ORDER BY siebel_site_id ASC
+Warning: mysql_num_rows() expects parameter 1 to be resource, boolean given in C:\wamp\www\fuzzy-match\fuzzy-match S-298.php on line 224
+
+ ADDRESS NOT MATCHED = > INSERT INTO srm_sites SET srm_company_id='122147', customer_number='295', division='EASTMAN CHEMICAL COMPANY', department='',address1='200 SOUTH WILCOX DRIVE', address2='BUILDING 54D 5TH FLOOR', city='KINGSPORT', state='TN', country='United States', zipcode='37660', updated_at=now()
+Dummy Site Insert Successful\r\nUPDATE srm_students SET address_matched =1, srm_site_id = 252941 WHERE id = 58
+Update Successful successful
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 58Array
+(
+    [id] => 61
+    [customer_number] => 23408
+    [siebel_site_id] => 36946
+    [division] => AEARO COMPANY
+    [department] => 
+    [address1] => 90 MECHANIC STREET
+    [address2] => 
+    [city] => SOUTHBRIDGE
+    [state] => MA
+    [country] => United States
+    [zipcode] => 01550
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 61
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 36946 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 128478 WHERE id = 61
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 61Array
+(
+    [id] => 64
+    [customer_number] => 136310
+    [siebel_site_id] => 227445
+    [division] => NILFISK ADVANCE
+    [department] => A DIVISION OF ALTO
+    [address1] => 2100 HIGHWAY 265
+    [address2] => 
+    [city] => SPRINGDALE
+    [state] => AR
+    [country] => United States
+    [zipcode] => 72764
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 64
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 227445 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 214468 WHERE id = 64
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 64Array
+(
+    [id] => 72
+    [customer_number] => 6462
+    [siebel_site_id] => 234751
+    [division] => ERICSSON MICROWAVE SYSTEMS AB
+    [department] => 
+    [address1] => SANDLIDSGATAN 3
+    [address2] => 
+    [city] => BORAS
+    [state] => SE
+    [country] => Sweden
+    [zipcode] => 504 12
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 72
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 234751 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 212182 WHERE id = 72
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 72Array
+(
+    [id] => 73
+    [customer_number] => 6058
+    [siebel_site_id] => 122827
+    [division] => MERCK AND COMPANY
+    [department] => 
+    [address1] => 126 EAST LINCOLN AVENUE RY80-D5
+    [address2] => 
+    [city] => RAHWAY
+    [state] => NJ
+    [country] => United States
+    [zipcode] => 07065
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 73
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 122827 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 211348 WHERE id = 73
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 73Array
+(
+    [id] => 76
+    [customer_number] => 40
+    [siebel_site_id] => 50493
+    [division] => SANDIA NATIONAL LABORATORIES
+    [department] => 
+    [address1] => 1515 EUBANK BOULEVARD SOUTHEAST
+    [address2] => 
+    [city] => ALBUQUERQUE
+    [state] => NM
+    [country] => United States
+    [zipcode] => 87123
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 76
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 50493 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 86971 WHERE id = 76
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 76Array
+(
+    [id] => 85
+    [customer_number] => 2682
+    [siebel_site_id] => 9212
+    [division] => BANDAG INCORPORATED
+    [department] => 
+    [address1] => 6500 49TH STREET S
+    [address2] => 
+    [city] => MUSCATINE
+    [state] => IA
+    [country] => United States
+    [zipcode] => 52761-1162
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 85
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 9212 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 137890 WHERE id = 85
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 85Array
+(
+    [id] => 89
+    [customer_number] => 13023
+    [siebel_site_id] => 140937
+    [division] => JLG INDUSTRIES INCORPORATED
+    [department] => PRODUCTION RECEIVING DEPARTMENT
+    [address1] => 1 JLG DRIVE
+    [address2] => 
+    [city] => MCCONNELLSBURG
+    [state] => PA
+    [country] => United States
+    [zipcode] => 17233-9533
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 89
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 140937 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 192178 WHERE id = 89
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 89Array
+(
+    [id] => 90
+    [customer_number] => 25538
+    [siebel_site_id] => 40240
+    [division] => PAUL BRECHEISEN
+    [department] => 
+    [address1] => 9306 CHATTERTON COURT
+    [address2] => 
+    [city] => AUSTIN
+    [state] => TX
+    [country] => United States
+    [zipcode] => 78729-2820
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 90
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 40240 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 131117 WHERE id = 90
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 90Array
+(
+    [id] => 94
+    [customer_number] => 404840
+    [siebel_site_id] => 11910
+    [division] => CONVATEC INCORPORATED
+    [department] => 
+    [address1] => 200 HEADQUARTERS PARK DRIVE
+    [address2] => C28.6
+    [city] => SKILLMAN
+    [state] => NJ
+    [country] => United States
+    [zipcode] => 08558
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 94
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 11910 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 139781 WHERE id = 94
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 94Array
+(
+    [id] => 95
+    [customer_number] => 890
+    [siebel_site_id] => 211067
+    [division] => MEDTRONIC INCORPORATED
+    [department] => MEDTRONIC PERFUSION SYSTEMS
+    [address1] => 7611 NORTHLAND DRIVE
+    [address2] => 
+    [city] => BROOKLYN PARK
+    [state] => MN
+    [country] => United States
+    [zipcode] => 55428
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 95
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 211067 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 139345 WHERE id = 95
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 95Array
+(
+    [id] => 97
+    [customer_number] => 8201
+    [siebel_site_id] => 12354
+    [division] => INTERNATIONAL GAME TECHNOLOGY
+    [department] => MECHANICAL ENGINEERING DEPARTMENT
+    [address1] => 9295 PROTOTYPE DRIVE
+    [address2] => 
+    [city] => RENO
+    [state] => NV
+    [country] => United States
+    [zipcode] => 89511-8986
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 97
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 12354 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 215693 WHERE id = 97
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 97Array
+(
+    [id] => 98
+    [customer_number] => 2022
+    [siebel_site_id] => 107313
+    [division] => CARRIER CORPORATION
+    [department] => 
+    [address1] => 700 OLYMPIC DRIVE
+    [address2] => 
+    [city] => ATHENS
+    [state] => GA
+    [country] => United States
+    [zipcode] => 30601
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 98
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 107313 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 190904 WHERE id = 98
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 98Array
+(
+    [id] => 105
+    [customer_number] => 14668
+    [siebel_site_id] => 24024
+    [division] => FORT RECOVERY INDUSTRIES INCORPORATED
+    [department] => 
+    [address1] => 2440 STATE HIGHWAY 49
+    [address2] => 
+    [city] => FORT RECOVERY
+    [state] => OH
+    [country] => United States
+    [zipcode] => 45846
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 105
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 24024 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 205482 WHERE id = 105
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 105Array
+(
+    [id] => 107
+    [customer_number] => 748
+    [siebel_site_id] => 141090
+    [division] => CUMMINS POWER GENERATION
+    [department] => 
+    [address1] => 1400 73RD AVENUE NE
+    [address2] => 
+    [city] => MINNEAPOLIS
+    [state] => MN
+    [country] => United States
+    [zipcode] => 55432
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 107
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 141090 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 215257 WHERE id = 107
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 107Array
+(
+    [id] => 109
+    [customer_number] => 2722
+    [siebel_site_id] => 24637
+    [division] => COPELAND CORPORATION
+    [department] => 
+    [address1] => 1675 W. Campbell Rd
+    [address2] => 
+    [city] => SIDNEY
+    [state] => OH
+    [country] => United States
+    [zipcode] => 45365
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 109
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 24637 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 114875 WHERE id = 109
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 109Array
+(
+    [id] => 111
+    [customer_number] => 20352
+    [siebel_site_id] => 32378
+    [division] => STARKEY LABS
+    [department] => 
+    [address1] => 6600 WASHINGTON AVENUE SOUTH
+    [address2] => TECH CENTER BUILDING
+    [city] => EDEN PRAIRIE
+    [state] => MN
+    [country] => United States
+    [zipcode] => 55344
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 111
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 32378 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 81756 WHERE id = 111
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 111Array
+(
+    [id] => 112
+    [customer_number] => 29266
+    [siebel_site_id] => 45746
+    [division] => NEWS SPORTS MICROWAVE
+    [department] => 
+    [address1] => 2732 VIA ORANGE WAY
+    [address2] => SUITE A
+    [city] => SPRING VALLEY
+    [state] => CA
+    [country] => United States
+    [zipcode] => 91978
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 112
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 45746 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 202733 WHERE id = 112
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 112Array
+(
+    [id] => 114
+    [customer_number] => 188
+    [siebel_site_id] => 2325527
+    [division] => INGERSOLL RAND ARO FLUID PRODUCTS
+    [department] => ENGINEERING
+    [address1] => 1 ARO CENTER
+    [address2] => 
+    [city] => BRYAN
+    [state] => OH
+    [country] => United States
+    [zipcode] => 43506
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 114
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 2325527 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 94533 WHERE id = 114
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 114Array
+(
+    [id] => 116
+    [customer_number] => 188
+    [siebel_site_id] => 40628-T
+    [division] => INGERSOLL RAND
+    [department] => ENERGY SYSTEMS/PORTSMOUTH
+    [address1] => 32 EXETER STREET
+    [address2] => 
+    [city] => PORTSMOUTH
+    [state] => NH
+    [country] => United States
+    [zipcode] => 03801-2811
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 116
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 40628-T ORDER BY siebel_site_id ASC
+Warning: mysql_num_rows() expects parameter 1 to be resource, boolean given in C:\wamp\www\fuzzy-match\fuzzy-match S-298.php on line 224
+
+ ADDRESS NOT MATCHED = > INSERT INTO srm_sites SET srm_company_id='122147', customer_number='188', division='INGERSOLL RAND', department='ENERGY SYSTEMS/PORTSMOUTH',address1='32 EXETER STREET', address2='', city='PORTSMOUTH', state='NH', country='United States', zipcode='03801-2811', updated_at=now()
+Dummy Site Insert Successful\r\nUPDATE srm_students SET address_matched =1, srm_site_id = 252943 WHERE id = 116
+Update Successful successful
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 116Array
+(
+    [id] => 117
+    [customer_number] => 6449
+    [siebel_site_id] => 30962
+    [division] => SYNTHES USA
+    [department] => MANUFACTURING ENGEERING
+    [address1] => 1051 SYNTHES AVENUE
+    [address2] => 
+    [city] => MONUMENT
+    [state] => CO
+    [country] => United States
+    [zipcode] => 80132
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 117
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 30962 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 212227 WHERE id = 117
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 117Array
+(
+    [id] => 119
+    [customer_number] => 2243
+    [siebel_site_id] => 194883
+    [division] => THOMAS AND BETTS CORPORATION
+    [department] => 
+    [address1] => ESNA PARK DRIVE
+    [address2] => 
+    [city] => HACKETTSTOWN
+    [state] => NJ
+    [country] => United States
+    [zipcode] => 07840
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 119
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 194883 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 137059 WHERE id = 119
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 119Array
+(
+    [id] => 122
+    [customer_number] => 128605
+    [siebel_site_id] => 209221
+    [division] => BWA TURBO SYSTEMS
+    [department] => 
+    [address1] => 1849 BREVARD ROAD
+    [address2] => 
+    [city] => ASHEVILLE
+    [state] => NC
+    [country] => United States
+    [zipcode] => 28801
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 122
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 209221 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 26154 WHERE id = 122
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 122Array
+(
+    [id] => 123
+    [customer_number] => 9842
+    [siebel_site_id] => 22169
+    [division] => ROBERT BOSCH GMBH
+    [department] => PT/BEH-ECC2
+    [address1] => MAX-LANG-STRASSE 40-46
+    [address2] => 
+    [city] => LEINFELDEN-ECHTERDINGEN
+    [state] => DE
+    [country] => Germany
+    [zipcode] => 70745
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 123
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 22169 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 178453 WHERE id = 123
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 123Array
+(
+    [id] => 125
+    [customer_number] => 1007
+    [siebel_site_id] => 233378
+    [division] => FOSTER MILLER TECHNOLOGIES
+    [department] => 
+    [address1] => 431 NEW KARMER ROAD
+    [address2] => 
+    [city] => ALBANY
+    [state] => NY
+    [country] => United States
+    [zipcode] => 12201
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 125
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 233378 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 133562 WHERE id = 125
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 125Array
+(
+    [id] => 126
+    [customer_number] => 22018
+    [siebel_site_id] => 34852
+    [division] => G R MANUFACTURING
+    [department] => 
+    [address1] => 4800 COMMERCE DRIVE
+    [address2] => 
+    [city] => TRUSSVILLE
+    [state] => AL
+    [country] => United States
+    [zipcode] => 35173
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 126
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 34852 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 129626 WHERE id = 126
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 126Array
+(
+    [id] => 127
+    [customer_number] => 71
+    [siebel_site_id] => 187745
+    [division] => EATON CORPORATION
+    [department] => 
+    [address1] => 32ND AVENUE WEST
+    [address2] => 
+    [city] => SPENCER
+    [state] => IA
+    [country] => United States
+    [zipcode] => 51301
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 127
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 187745 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 214743 WHERE id = 127
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 127Array
+(
+    [id] => 129
+    [customer_number] => 7358
+    [siebel_site_id] => 187914
+    [division] => UNITED DEFENSE LP
+    [department] => ARMAMENT SYSTEMS DIVISION
+    [address1] => 4800 EAST RIVER ROAD
+    [address2] => 
+    [city] => MINNEAPOLIS
+    [state] => MN
+    [country] => United States
+    [zipcode] => 55421-1498
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 129
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 187914 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 105235 WHERE id = 129
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 129Array
+(
+    [id] => 130
+    [customer_number] => 308
+    [siebel_site_id] => 1049
+    [division] => UNISYS CORPORATION
+    [department] => 
+    [address1] => 41100 PLYMOUTH ROAD
+    [address2] => 
+    [city] => PLYMOUTH
+    [state] => MI
+    [country] => United States
+    [zipcode] => 48170
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 130
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 1049 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 187570 WHERE id = 130
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 130Array
+(
+    [id] => 131
+    [customer_number] => 398
+    [siebel_site_id] => 203992
+    [division] => UNITED STATES ARMY ARDEC
+    [department] => AMSRD-AAR-AIS-TD
+    [address1] => BUILDING 12 ROOM 40
+    [address2] => 
+    [city] => PICATINNY ARSENAL
+    [state] => NJ
+    [country] => United States
+    [zipcode] => 07806
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 131
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 203992 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 142839 WHERE id = 131
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 131Array
+(
+    [id] => 133
+    [customer_number] => 12540
+    [siebel_site_id] => 203035
+    [division] => POLARIS POOL SYSTEMS, INC.
+    [department] => 
+    [address1] => 2620 COMMERCE WAY
+    [address2] => 
+    [city] => VISTA
+    [state] => CA
+    [country] => United States
+    [zipcode] => 92083
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 133
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 203035 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 205218 WHERE id = 133
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 133Array
+(
+    [id] => 134
+    [customer_number] => 264588
+    [siebel_site_id] => 3006380
+    [division] => BOSCH REXROTH AG
+    [department] => ABTEILUNG BRL/EAT
+    [address1] => LOEWENTORSTRASSE 68-70
+    [address2] => 
+    [city] => STUTTGART
+    [state] => DE
+    [country] => Germany
+    [zipcode] => 70376
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 134
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 3006380 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 100910 WHERE id = 134
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 134Array
+(
+    [id] => 137
+    [customer_number] => 7358
+    [siebel_site_id] => 0001836386-M-M
+    [division] => UNITED DEFENSE LP
+    [department] => 
+    [address1] => 1100 Bairs Road
+    [address2] => 
+    [city] => York
+    [state] => PA
+    [country] => United States
+    [zipcode] => 17404
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 137
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 0001836386-M-M ORDER BY siebel_site_id ASC
+Warning: mysql_num_rows() expects parameter 1 to be resource, boolean given in C:\wamp\www\fuzzy-match\fuzzy-match S-298.php on line 224
+
+ ADDRESS NOT MATCHED = > INSERT INTO srm_sites SET srm_company_id='122147', customer_number='7358', division='UNITED DEFENSE LP', department='',address1='1100 Bairs Road', address2='', city='York', state='PA', country='United States', zipcode='17404', updated_at=now()
+Dummy Site Insert Successful\r\nUPDATE srm_students SET address_matched =1, srm_site_id = 252945 WHERE id = 137
+Update Successful successful
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 137Array
+(
+    [id] => 138
+    [customer_number] => 4446
+    [siebel_site_id] => 207366
+    [division] => AVIATION APPLIED TECHNOLOGY DIRECTORATE
+    [department] => US ARMY-AATD
+    [address1] => LEE BOULEVARD, BUILDING 403
+    [address2] => AMSAM-RD-AA-SB
+    [city] => NEWPORT NEWS
+    [state] => VA
+    [country] => United States
+    [zipcode] => 23604
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 138
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 207366 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 189959 WHERE id = 138
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 138Array
+(
+    [id] => 139
+    [customer_number] => 4355
+    [siebel_site_id] => 16573
+    [division] => VOLKE ENTWICKLUNGSRING GMBH
+    [department] => 
+    [address1] => DAIMLERSTRASSE 35
+    [address2] => 
+    [city] => WOLFSBURG
+    [state] => DE
+    [country] => Germany
+    [zipcode] => 38446
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 139
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 16573 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 190210 WHERE id = 139
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 139Array
+(
+    [id] => 142
+    [customer_number] => 106260
+    [siebel_site_id] => 100737-T
+    [division] => SERCEL INCORPORATED
+    [department] => 
+    [address1] => 17200 PARK ROW BLVD.
+    [address2] => 
+    [city] => HOUSTON
+    [state] => TX
+    [country] => United States
+    [zipcode] => 77084-4925
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 142
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 100737-T ORDER BY siebel_site_id ASC
+Warning: mysql_num_rows() expects parameter 1 to be resource, boolean given in C:\wamp\www\fuzzy-match\fuzzy-match S-298.php on line 224
+
+ ADDRESS NOT MATCHED = > INSERT INTO srm_sites SET srm_company_id='122147', customer_number='106260', division='SERCEL INCORPORATED', department='',address1='17200 PARK ROW BLVD.', address2='', city='HOUSTON', state='TX', country='United States', zipcode='77084-4925', updated_at=now()
+Dummy Site Insert Successful\r\nUPDATE srm_students SET address_matched =1, srm_site_id = 252947 WHERE id = 142
+Update Successful successful
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 142Array
+(
+    [id] => 147
+    [customer_number] => 2635
+    [siebel_site_id] => 3007692
+    [division] => SIEMENS AG
+    [department] => ABTEILUNG I IA SC PS 1 RD 3
+    [address1] => OESTLICHE RHEINBRUECKENSTRASSE 50
+    [address2] => 
+    [city] => KARLSRUHE
+    [state] => DE
+    [country] => Germany
+    [zipcode] => 76181
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 147
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 3007692 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 72517 WHERE id = 147
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 147Array
+(
+    [id] => 148
+    [customer_number] => 115340
+    [siebel_site_id] => 237837
+    [division] => CODEM SYSTEMS INC
+    [department] => 
+    [address1] => 7 EXECUTIVE PARK DRIVE
+    [address2] => 
+    [city] => MERRIMACK
+    [state] => NH
+    [country] => United States
+    [zipcode] => 03054
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 148
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 237837 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 185800 WHERE id = 148
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 148Array
+(
+    [id] => 150
+    [customer_number] => 10985
+    [siebel_site_id] => 143462
+    [division] => SMITH INTERNATIONAL INCORPORATED
+    [department] => SMITH TOOL
+    [address1] => 1405 NORTH WAVERLY
+    [address2] => 
+    [city] => PONCA CITY
+    [state] => OK
+    [country] => United States
+    [zipcode] => 74601
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 150
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 143462 ORDER BY siebel_site_id ASCUPDATE STUDENT RECORD ==> UPDATE srm_students SET srm_site_id = 202001 WHERE id = 150
+
+ <<<<< CASE 1 ENDS >>>>>> @ student_id = 150Array
+(
+    [id] => 151
+    [customer_number] => 13830
+    [siebel_site_id] => 132123
+    [division] => VOLVO TRUCK CORPORATION
+    [department] => 
+    [address1] => 7900 NATIONAL SERVICE ROAD
+    [address2] => 
+    [city] => GREENSBORO
+    [state] => NC
+    [country] => 
+    [zipcode] => 27402-6115
+)
+
+
+ <<<<< CASE 1 STARTS >>>>>> @ student_id = 151
+ SELECT THE SITE RECORD ==> SELECT id FROM srm_sites WHERE siebel_site_id = 132123 ORDER BY siebel_site_id ASC
